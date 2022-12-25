@@ -37,9 +37,9 @@ router.post('/', async (req, res) => {
       const data2 = await Model.findOne(data);
       
       if (data2 === null) {
-        res.json({
+        res.status(400).json({
           status: 0,
-          message: "User doesn't exist"
+          message: "Intente de nuevo"
         })
       }
       else if (data2.username === data.username && data2.password === data.password) {
