@@ -4,3 +4,8 @@ tutorial nodejs and mongodb
 https://www.guru99.com/node-js-mongodb.html
 
 https://www.freecodecamp.org/news/build-a-restful-api-using-node-express-and-mongodb/
+
+// database name
+https://stackoverflow.com/questions/61388479/how-to-set-db-name-and-collection-name-in-mongoose
+
+https://www.codegrepper.com/tpc/mongoose.connect+dbname
