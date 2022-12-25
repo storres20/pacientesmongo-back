@@ -26,6 +26,11 @@ const app = express();
 
 app.use(express.json());
 
+// simple route
+app.get("/", async (req, res) => {
+  res.json({ message: "Welcome to Back-End application." });
+});
+
 // Routes
 app.use('/api', routes)
 
