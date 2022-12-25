@@ -34,8 +34,8 @@ app.use(express.json());
 
 // Cors
 var corsOptions = {
-    origin: "http://localhost:3000" //frontend
-    //origin: "https://pacientes20.netlify.app" //frontend
+    //origin: "http://localhost:3000" //frontend
+    origin: "https://pacientes20.netlify.app" //frontend
 };
 
 app.use(cors(corsOptions));
