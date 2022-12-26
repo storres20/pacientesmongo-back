@@ -44,10 +44,13 @@ router.get('/', async (req, res) => {
 router.get('/:id', async (req, res) => {
   //res.send('Get by ID API')
   //res.send(req.params.id)
+  data = {
+    fechacita: req.params.id
+  }
   
   try{
-    const data = await Model.findById(req.params.id);
-    res.json(data)
+    const data2 = await Model.find(data);
+    res.json(data2)
   }
   catch(error){
       res.status(500).json({message: error.message})
